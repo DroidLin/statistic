@@ -1,5 +1,6 @@
 plugins {
     id("java-library")
+    id("org.jetbrains.kotlin.jvm")
     id("maven-publish")
 }
 
@@ -18,10 +19,9 @@ java {
 }
 
 dependencies {
+    implementation(project(":statistic-interfaces"))
     implementation("com.github.DroidLin.common:common-jvm:1.0.1")
     implementation("org.json:json:20230618")
-
-    implementation(project(":statistic-interfaces"))
 }
 
 publishing {
