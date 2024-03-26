@@ -20,4 +20,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "statistic"
 include(":statistic-interfaces")
+include(":statistic-hilt-extensions")
 include(":core-statistic")
